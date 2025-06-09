@@ -1,16 +1,29 @@
 :root {
   --heading-font: "Inter", sans-serif;
   --body-font: "Roboto", sans-serif;
-  --primary-color: rgb(141, 25, 235);
+  --primary-color: rgb(20, 3, 33);
   --secondary-color: rgb(238, 128, 244);
-  --accent: rgb(240, 86, 215) ;
+  --accent: rgb(240, 86, 215);
   --background: rgb(252, 250, 255);
   --dark-text: rgb(20, 3, 33);
   --light-text: rgb(252, 250, 255);
+  --button-color: rgb(141, 25, 235);
+  --width-xs: 18em;
+  --width-sm: 36em;
+  --width-md: 54em;
+  --width-lg: 72em;
+  --width-xl: 90em;
+  --h1-size: 1.2rem;
+  --logo-size: 1.8rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 4rem;
 }
 
 [dark-theme="dark"] {
-  --primary-color: rgb(135, 20, 230);
+  --primary-color:rgb(239, 222, 252);
   --secondary-color: rgb(121, 11, 127);
   --accent: rgb(169, 15, 143) ;
   --background: rgb(2, 0, 5) ;
@@ -18,13 +31,78 @@
 }
 
 
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
   font-family: var(--body-font);
   background-color: var(--background);
   color: var(--dark-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
+
+/* Navbar */
+.nav-header {
+  width: 100%;
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--light-text);
+  width: 100%;
+}
+
+.navbar .left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navbar .logo p {
+font-size: var(--logo-size);
+padding: var(--spacing-sm);
+border-radius: 50%;
+background-color:var(--button-color);
+text-align: center;
+
+}
+
+.left-nav h1 {
+  font-size: var(--h1-size);
+  margin-left: var(--spacing-xs);
+}
+
+
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navbar .menu li {
+  padding: 0 var(--spacing-sm);
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--light-text);
+  font-weight: bold;
+}
+
 
