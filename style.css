@@ -1,8 +1,30 @@
-html {
-  box-sizing: border-box;
+:root {
+  --heading-font: "Inter", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --primary-color: rgb(141, 25, 235);
+  --secondary-color: rgb(238, 128, 244);
+  --accent: rgb(240, 86, 215) ;
+  --background: rgb(252, 250, 255);
+  --dark-text: rgb(20, 3, 33);
+  --light-text: rgb(252, 250, 255);
 }
+
+[dark-theme="dark"] {
+  --primary-color: rgb(135, 20, 230);
+  --secondary-color: rgb(121, 11, 127);
+  --accent: rgb(169, 15, 143) ;
+  --background: rgb(2, 0, 5) ;
+  --light-text: rgb(239, 222, 252); 
+}
+
 
 body {
   margin: 0;
-  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: var(--body-font);
+  background-color: var(--background);
+  color: var(--dark-text);
 }
+
