@@ -1,20 +1,24 @@
 :root {
   --heading-font: "Inter", sans-serif;
   --body-font: "Roboto", sans-serif;
-  --primary-color: rgb(20, 3, 33);
-  --secondary-color: rgb(238, 128, 244);
+  --primary-color: rgb(9, 70, 119);
+  --secondary-color: rgb(5 127 186);
   --accent: rgb(240, 86, 215);
   --background: rgb(252, 250, 255);
   --dark-text: rgb(20, 3, 33);
   --light-text: rgb(252, 250, 255);
-  --button-color: rgb(141, 25, 235);
+  --button-color: rgb(0 127 186);
+  --button-hover-background-color: rgb(255 199 44);
+  --button-hover-color: rgb(51, 51, 51);
   --width-xs: 18em;
   --width-sm: 36em;
   --width-md: 54em;
   --width-lg: 72em;
   --width-xl: 90em;
   --h1-size: 1.2rem;
+  --h2-font-size: 3rem;
   --logo-size: 1.8rem;
+  --feature-font-size: 1.5rem;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
@@ -23,14 +27,12 @@
 }
 
 [dark-theme="dark"] {
-  --primary-color:rgb(239, 222, 252);
+  --primary-color: rgb(239, 222, 252);
   --secondary-color: rgb(121, 11, 127);
-  --accent: rgb(169, 15, 143) ;
-  --background: rgb(2, 0, 5) ;
-  --light-text: rgb(239, 222, 252); 
+  --accent: rgb(169, 15, 143);
+  --background: rgb(2, 0, 5);
+  --light-text: rgb(239, 222, 252);
 }
-
-
 
 body {
   margin: 0;
@@ -39,21 +41,16 @@ body {
   font-family: var(--body-font);
   background-color: var(--background);
   color: var(--dark-text);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
 }
 
 /* Navbar */
-#Home {
+.nav-header {
   width: 100%;
   background-color: var(--primary-color);
   position: fixed;
   top: 0;
   left: 0;
-   
+  z-index: 10;
 }
 
 .navbar {
@@ -61,8 +58,7 @@ body {
   justify-content: space-around;
   align-items: center;
   color: var(--light-text);
-
- 
+  padding: 0 var(--spacing-lg);
 }
 
 .navbar .company-details {
@@ -71,33 +67,28 @@ body {
   align-items: center;
 }
 
-
 .navbar .logo p {
-font-size: var(--logo-size);
-padding: var(--spacing-sm);
-border-radius: 50%;
-background-color:var(--button-color);
-text-align: center;
-
+  font-size: var(--logo-size);
+  padding: var(--spacing-sm);
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  text-align: center;
 }
 
 .company-details h1 {
   font-size: var(--h1-size);
   margin-left: var(--spacing-xs);
-    font-family: var(--heading-font);
-    letter-spacing: 1px;
-    font-style: italic;
-    font-weight: 600;
+  font-family: var(--heading-font);
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: 600;
 }
-
-
 
 .navbar .menu {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .navbar .menu li {
@@ -118,3 +109,33 @@ text-align: center;
   color: var(--accent);
 }
 
+.about-background {
+  border: 1px solid #ff0000;
+  margin-top: 125px;
+}
+
+.feature-wrapper {
+  display: flex;
+}
+
+.feature-container {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-left {
+  flex-direction: row;
+}
+
+.flex-right {
+  flex-direction: row-reverse;
+}
+
+.feature-container .feature-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
