@@ -1,14 +1,14 @@
 :root {
   --heading-font: "Inter", sans-serif;
   --body-font: "Roboto", sans-serif;
-  --primary-color: rgb(9, 70, 119);
-  --secondary-color: rgb(5 127 186);
-  --accent: rgb(240, 86, 215);
-  --background: rgb(252, 250, 255);
+  --primary-color: rgb(0 92 117);
+  --secondary-color: rgb(48, 48, 48);
+  --accent: rgb(255,215,0);
+  --background: rgb(240 240 240);
   --dark-text: rgb(20, 3, 33);
   --light-text: rgb(252, 250, 255);
+  --form-color: rgb(27, 50, 56);
   --button-color: rgb(0 127 186);
-  --button-hover-background-color: rgb(255 199 44);
   --button-hover-color: rgb(51, 51, 51);
   --width-xs: 18em;
   --width-sm: 36em;
@@ -26,14 +26,6 @@
   --spacing-xl: 4rem;
 }
 
-[dark-theme="dark"] {
-  --primary-color: rgb(239, 222, 252);
-  --secondary-color: rgb(121, 11, 127);
-  --accent: rgb(169, 15, 143);
-  --background: rgb(2, 0, 5);
-  --light-text: rgb(239, 222, 252);
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -41,6 +33,7 @@ body {
   font-family: var(--body-font);
   background-color: var(--background);
   color: var(--dark-text);
+  scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -81,7 +74,7 @@ body {
   font-family: var(--heading-font);
   letter-spacing: 1px;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .navbar .menu {
@@ -99,7 +92,7 @@ body {
   text-decoration: none;
   font-size: 1.3rem;
   color: var(--light-text);
-  font-weight: 400;
+  font-weight: 500;
   transition: color 0.25s ease;
 }
 
