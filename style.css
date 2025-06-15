@@ -201,7 +201,7 @@ main {
   text-align: center;
   border-radius: var(--border-radius-sm);
   background-color: rgba(27, 50, 56, 0.05);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
 
 
 }
@@ -238,7 +238,6 @@ main {
 
 .feature-wrapper .feature-card:hover {
   transform: translateY(-0.25rem);
-  box-shadow: 0 0.375em 1.125em rgba(255, 255, 255, 0.1);
 }
 
 .feature-wrapper .feature-card.track-card {
