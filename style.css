@@ -9,6 +9,7 @@
   --bg-feature-card: rgba(27, 50, 56, 0.05);
   --bg-library: rgb(40, 40, 40);
   --bg-book-section: rgba(255, 255, 255, 0.02);
+  --tabs-hover-bg-color: rgba(255, 255, 255, 0.1);
   --bg-book-card: rgba(27, 50, 56, 0.15);
   --bg-book-form: rgb(27, 50, 56);
   --bg-footer: rgb(26, 26, 26);
@@ -25,6 +26,7 @@
   --width-xl: 90em;
 
   /* spacing */
+  --spacing-xxs: 0.25rem;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
@@ -364,7 +366,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
+
 
 .library-details .library-layout-container .library-actions {
   display: flex;
@@ -386,9 +390,70 @@ main {
 }
 
 .library-layout-container .library-actions .primary-btn:hover {
-  /* transform: translateY(-0.125rem); */
   transform: scale(1.02);
   box-shadow: var(--primary-btn-hover-box-shadow);
   background-image: var(--primary-btn-hover-linear-gradient);
   cursor: pointer;
+}
+
+.library-layout-container .library-section {
+  background-color: var(--bg-book-section);
+  padding: var(--spacing-lg);
+  position: relative;
+
+}
+
+.library-section .library-controls::before {
+  position: absolute;
+  width: calc(100% - 0.2em);
+  content: "";
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  top: 2.1875em;
+  left: 0;
+}
+
+.library-section .library-controls:after {
+    position: absolute;
+  width: calc(100% - 0.2em);
+  content: "";
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  top: 6.875em;
+  left: 0;
+}
+
+.library-section .library-controls .library-tabs .library-tabs-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.library-section .library-controls .library-tabs .library-tabs-list li {
+  list-style: none;
+  padding: 0 var(--spacing-xs) ;
+}
+
+.library-section .library-controls .library-tabs .library-tabs-list .tabs {
+  text-decoration: none;
+  color: var(--light-text);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-sm);
+  padding: var(--spacing-xxs);
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.library-section .library-controls .library-tabs .library-tabs-list .tabs:hover {
+  cursor: pointer;
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--tabs-hover-bg-color);
+}
+
+.library-section .library-controls .library-tabs .library-tabs-list .tabs.active {
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--tabs-hover-bg-color);
+  font-weight: var(--font-weight-bold);
+
 }
