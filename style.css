@@ -69,7 +69,11 @@
     rgb(0, 159, 214),
     rgb(0, 92, 117)
   );
-  --primary-btn-hover-linear-gradient: linear-gradient(to right, rgb(0, 150, 200), rgb(0, 105, 130));
+  --primary-btn-hover-linear-gradient: linear-gradient(
+    to right,
+    rgb(0, 150, 200),
+    rgb(0, 105, 130)
+  );
 
   /* box-shadow */
   --logo-box-shadow: 0 0 0.375em rgba(255, 255, 255, 0.1);
@@ -77,9 +81,10 @@
   --rate-box-shadow: 0 0.25em 0.75em rgba(248, 181, 0, 0.3);
   --review-box-shadow: 0 0.25em 0.75em rgba(255, 126, 179, 0.3);
   --search-box-shadow: 0 0.25em 0.75em rgba(67, 206, 162, 0.25);
---primary-button-box-shadow: 0 0.125em 0.375em rgba(0, 0, 0, 0.2), 0 0 0.25em rgba(0, 127, 186, 0.3);
---primary-btn-hover-box-shadow: 0 0.1875em 0.625em rgba(0, 0, 0, 0.25), 0 0 0.375em rgba(0, 127, 186, 0.4);
-
+  --primary-button-box-shadow: 0 0.125em 0.375em rgba(0, 0, 0, 0.2),
+    0 0 0.25em rgba(0, 127, 186, 0.3);
+  --primary-btn-hover-box-shadow: 0 0.1875em 0.625em rgba(0, 0, 0, 0.25),
+    0 0 0.375em rgba(0, 127, 186, 0.4);
 }
 
 body {
@@ -158,7 +163,6 @@ body {
 
 .navbar .menu a:hover {
   cursor: pointer;
-  text-decoration: underline;
   color: var(--color-accent);
 }
 
@@ -385,6 +389,6 @@ main {
   /* transform: translateY(-0.125rem); */
   transform: scale(1.02);
   box-shadow: var(--primary-btn-hover-box-shadow);
-    background-image: var(--primary-btn-hover-linear-gradient);
+  background-image: var(--primary-btn-hover-linear-gradient);
   cursor: pointer;
 }
