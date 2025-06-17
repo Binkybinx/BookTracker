@@ -29,52 +29,94 @@
     </header>
 
     <main>
+      <!-- About Section -->
       <section id="About" class="about-background">
         <div class="about-details">
-          <h2>Features</h2>
-          <p>
+          <h2 class="section-heading">Features</h2>
+          <p class="section-subtext">
             Every book has a story - and so do your reading habits. This tracker
             helps you capture and reflect on your reading journey,from the first
             page to your final thoughts
           </p>
 
-          <div class="feature-wrapper">
-            <div class="feature-card track-card animate">
+          <div class="feature-container">
+            <article class="feature-card track-card animate">
               <div class="feature-icon track-icon">
-                <i class="fa-solid fa-book-open fa-2x"></i>
+                <i class="fa-solid fa-book-open fa-2x" aria-hidden="true"></i>
               </div>
               <h3 class="feature-title track-title">Track</h3>
               <p>
                 Organize your books into different categories and easily update
                 progress
               </p>
-            </div>
-            <div class="feature-card rate-card animate">
+            </article>
+            <article class="feature-card rate-card animate">
               <div class="feature-icon rate-icon">
-                <i class="fa-solid fa-star-half-stroke fa-2x"></i>
+                <i
+                  class="fa-solid fa-star-half-stroke fa-2x"
+                  aria-hidden="true"
+                ></i>
               </div>
               <h3 class="feature-title rate-title">Rate</h3>
               <p>Rate your books and easily sort them by your favorites.</p>
-            </div>
-            <div class="feature-card review-card animate">
+            </article>
+            <article class="feature-card review-card animate">
               <div class="feature-icon review-icon">
-                <i class="fa-solid fa-comment-dots fa-2x"></i>
+                <i
+                  class="fa-solid fa-comment-dots fa-2x"
+                  aria-hidden="true"
+                ></i>
               </div>
               <h3 class="feature-title review-title">Review</h3>
               <p>
                 Capture your thoughts through text, audio, or video reviews.
               </p>
-            </div>
-            <div class="feature-card search-card animate">
+            </article>
+            <article class="feature-card search-card animate">
               <div class="feature-icon search-icon">
-                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                <i
+                  class="fa-solid fa-magnifying-glass fa-2x"
+                  aria-hidden="true"
+                ></i>
               </div>
               <h3 class="feature-title search-title">Search</h3>
               <p>
                 Use Google Books to find your books quickily and add them to
                 your list with a click.
               </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Library Section -->
+      <section id="Library" class="library-background">
+        <div class="library-details">
+          <h2 class="section-heading">Your Library</h2>
+          <p class="section-subtext">
+            Your personal library — a space to grow, track, and revisit every
+            chapter of your reading journey.
+          </p>
+
+          <div class="library-layout-container">
+            <div class="library-actions">
+              <button class="primary-btn">Add Book</button>
+              <button class="primary-btn">Search Book</button>
             </div>
+            <div class="library-controls">
+              <nav class="library-tabs">
+                <ul class="library-tabs-list">
+                  <li><a href="#All-books" class="tabs">All Books</a></li>
+                  <li><a href="#Reading" class="tabs">Reading</a></li>
+                  <li><a href="#Completed" class="tabs">Completed</a></li>
+                  <li><a href="#Abandoned" class="tabs">Abandoned</a></li>
+                  <li><a href="#To Read" class="tabs">To Read</a></li>
+                  <li><a href="#Favorites" class="tabs">Favorites</a></li>
+                </ul>
+              </nav>
+              <aside class="library-filters"></aside>
+            </div>
+            <div class="book-grid"></div>
           </div>
         </div>
       </section>
