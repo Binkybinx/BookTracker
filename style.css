@@ -187,6 +187,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .section-heading {
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-bold);
@@ -219,7 +220,7 @@ main {
   }
 }
 
-.about-background .feature-container {
+.about-details .feature-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1.25rem;
@@ -361,7 +362,7 @@ main {
   align-items: center;
 }
 
-.library-details .library-layout-container {
+.library-background .library-layout-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -370,13 +371,13 @@ main {
 }
 
 
-.library-details .library-layout-container .library-actions {
+.library-layout-container .library-actions {
   display: flex;
   justify-content: center;
   padding: var(--spacing-lg) 0;
 }
 
-.library-layout-container .library-actions .primary-btn {
+.library-actions .primary-btn {
   margin: 0 var(--spacing-md);
   padding: var(--spacing-sm);
   border-radius: var(--border-radius-sm);
@@ -389,7 +390,7 @@ main {
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-.library-layout-container .library-actions .primary-btn:hover {
+.library-actions .primary-btn:hover {
   transform: scale(1.02);
   box-shadow: var(--primary-btn-hover-box-shadow);
   background-image: var(--primary-btn-hover-linear-gradient);
@@ -412,7 +413,7 @@ main {
   left: 0;
 }
 
-.library-section .library-controls:after {
+.library-section .library-controls::after {
     position: absolute;
   width: calc(100% - 0.2em);
   content: "";
@@ -421,18 +422,18 @@ main {
   left: 0;
 }
 
-.library-section .library-controls .library-tabs .library-tabs-list {
+.library-controls .library-tabs .library-tabs-list {
   display: flex;
   align-items: center;
   padding: 0;
 }
 
-.library-section .library-controls .library-tabs .library-tabs-list li {
+.library-tabs .library-tabs-list li {
   list-style: none;
   padding: 0 var(--spacing-xs) ;
 }
 
-.library-section .library-controls .library-tabs .library-tabs-list .tabs {
+.library-tabs .library-tabs-list .tabs {
   text-decoration: none;
   color: var(--light-text);
   font-weight: var(--font-weight-semibold);
@@ -441,7 +442,7 @@ main {
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
-.library-section .library-controls .library-tabs .library-tabs-list .tabs:hover {
+.library-tabs .library-tabs-list .tabs:hover {
   cursor: pointer;
   color: var(--color-accent);
   border-bottom: 2px solid var(--color-accent);
@@ -449,7 +450,7 @@ main {
   background-color: var(--tabs-hover-bg-color);
 }
 
-.library-section .library-controls .library-tabs .library-tabs-list .tabs.active {
+.library-tabs .library-tabs-list .tabs.active {
   color: var(--color-accent);
   border-bottom: 2px solid var(--color-accent);
   border-radius: var(--border-radius-sm);
