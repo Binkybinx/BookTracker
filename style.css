@@ -367,9 +367,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
-
 
 .library-layout-container .library-actions {
   display: flex;
@@ -401,7 +399,11 @@ main {
   background-color: var(--bg-book-section);
   padding: var(--spacing-lg);
   position: relative;
+}
 
+.library-section .library-controls {
+  display: flex;
+  align-items: center;
 }
 
 .library-section .library-controls::before {
@@ -414,7 +416,7 @@ main {
 }
 
 .library-section .library-controls::after {
-    position: absolute;
+  position: absolute;
   width: calc(100% - 0.2em);
   content: "";
   border: 2px solid rgba(255, 255, 255, 0.25);
@@ -430,7 +432,7 @@ main {
 
 .library-tabs .library-tabs-list li {
   list-style: none;
-  padding: 0 var(--spacing-xs) ;
+  padding: 0 var(--spacing-xs);
 }
 
 .library-tabs .library-tabs-list .tabs {
@@ -456,5 +458,61 @@ main {
   border-radius: var(--border-radius-sm);
   background-color: var(--tabs-hover-bg-color);
   font-weight: var(--font-weight-bold);
+}
 
+.library-controls .library-filters {
+  display: flex;
+  align-items: center;
+}
+
+.library-filters .filter-container {
+  position: relative;
+  margin: 0 var(--spacing-sm);
+}
+
+.library-filters .sort-container {
+  position: relative;
+}
+
+.library-filters .visually-hidden {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.library-filters .icon-overlay {
+  position: absolute;
+  z-index: 2;
+  top: 70%;
+  pointer-events: none;
+}
+
+.library-filters .icon-overlay:hover {
+  cursor: pointer;
+}
+
+.library-filters .icon-overlay.fa-sort {
+  left: 20%;
+}
+
+.library-filters select {
+  width: 1.6em;
+  height: 1.25em;
+  z-index: 1;
+  background: var(--bg-library);
+  border: 0;
+  color: var(--light-text);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-xxs) var(--spacing-xxs);
+}
+
+.library-filters select:focus-visible {
+  outline: none;
+}
+
+.library-filters #sort-books {
+  width: 1.6em;
+  height: 1.6em;
 }
