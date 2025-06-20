@@ -31,126 +31,115 @@
     <main class="main-section">
       <!-- About Section -->
       <section id="About" class="about-section">
-        <div class="about-details">
-          <h2 class="section-heading">Features</h2>
-          <p class="section-subtext">
-            Every book has a story - and so do your reading habits. This tracker
-            helps you capture and reflect on your reading journey,from the first
-            page to your final thoughts
-          </p>
+        <h2 class="section-heading">Features</h2>
+        <p class="section-subtext">
+          Every book has a story - and so do your reading habits. This tracker
+          helps you capture and reflect on your reading journey,from the first
+          page to your final thoughts
+        </p>
 
-          <div class="feature-container">
-            <article class="feature-card track-card animate">
-              <div class="feature-icon track-icon">
-                <i class="fa-solid fa-book-open fa-2x" aria-hidden="true"></i>
-              </div>
-              <h3 class="feature-title track-title">Track</h3>
-              <p>
-                Organize your books into different categories and easily update
-                progress
-              </p>
-            </article>
-            <article class="feature-card rate-card animate">
-              <div class="feature-icon rate-icon">
-                <i
-                  class="fa-solid fa-star-half-stroke fa-2x"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <h3 class="feature-title rate-title">Rate</h3>
-              <p>Rate your books and easily sort them by your favorites.</p>
-            </article>
-            <article class="feature-card review-card animate">
-              <div class="feature-icon review-icon">
-                <i
-                  class="fa-solid fa-comment-dots fa-2x"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <h3 class="feature-title review-title">Review</h3>
-              <p>
-                Capture your thoughts through text, audio, or video reviews.
-              </p>
-            </article>
-            <article class="feature-card search-card animate">
-              <div class="feature-icon search-icon">
-                <i
-                  class="fa-solid fa-magnifying-glass fa-2x"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <h3 class="feature-title search-title">Search</h3>
-              <p>
-                Use Google Books to find your books quickily and add them to
-                your list with a click.
-              </p>
-            </article>
-          </div>
+        <div class="feature-container">
+          <article class="feature-card track-card animate">
+            <div class="feature-icon track-icon">
+              <i class="fa-solid fa-book-open fa-2x" aria-hidden="true"></i>
+            </div>
+            <h3 class="feature-title track-title">Track</h3>
+            <p>
+              Organize your books into different categories and easily update
+              progress
+            </p>
+          </article>
+          <article class="feature-card rate-card animate">
+            <div class="feature-icon rate-icon">
+              <i
+                class="fa-solid fa-star-half-stroke fa-2x"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <h3 class="feature-title rate-title">Rate</h3>
+            <p>Rate your books and easily sort them by your favorites.</p>
+          </article>
+          <article class="feature-card review-card animate">
+            <div class="feature-icon review-icon">
+              <i class="fa-solid fa-comment-dots fa-2x" aria-hidden="true"></i>
+            </div>
+            <h3 class="feature-title review-title">Review</h3>
+            <p>Capture your thoughts through text, audio, or video reviews.</p>
+          </article>
+          <article class="feature-card search-card animate">
+            <div class="feature-icon search-icon">
+              <i
+                class="fa-solid fa-magnifying-glass fa-2x"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <h3 class="feature-title search-title">Search</h3>
+            <p>
+              Use Google Books to find your books quickily and add them to your
+              list with a click.
+            </p>
+          </article>
         </div>
       </section>
 
       <!-- Library Section -->
       <section id="Library" class="library-section">
-        <div class="library-details">
-          <h2 class="section-heading">Your Library</h2>
-          <p class="section-subtext">
-            Your personal library — a space to grow, track, and revisit every
-            chapter of your reading journey.
-          </p>
+        <h2 class="section-heading">Your Library</h2>
+        <p class="section-subtext">
+          Your personal library — a space to grow, track, and revisit every
+          chapter of your reading journey.
+        </p>
 
-          <div class="library-layout-container">
-            <div class="library-actions">
-              <button class="primary-btn">Add Book</button>
-              <button class="primary-btn">Search Book</button>
-            </div>
-            <section class="library-container">
-              <div class="library-controls">
-                <nav class="library-tabs">
-                  <ul class="library-tabs-list">
-                    <li>
-                      <a href="#All-books" class="tabs active">All Books</a>
-                    </li>
-                    <li><a href="#Reading" class="tabs">Reading</a></li>
-                    <li><a href="#Completed" class="tabs">Completed</a></li>
-                    <li><a href="#Abandoned" class="tabs">Abandoned</a></li>
-                    <li><a href="#To Read" class="tabs">To Read</a></li>
-                    <li><a href="#Favorites" class="tabs">Favorites</a></li>
-                  </ul>
-                </nav>
-                <div class="library-filters">
-                  <div class="filter-container">
-                    <i class="fa-solid fa-filter fa-xl icon-overlay"></i>
-                    <label for="filter-books" class="visually-hidden"
-                      >Filter-books</label
-                    >
-                    <select name="filter" id="filter-books">
-                      <option value="" selected disabled>Filter by...</option>
-                      <option value="author">Author</option>
-                      <option value="status">Satus</option>
-                      <option value="rating">Rating</option>
-                      <option value="date-completed">Date Completed</option>
-                    </select>
-                  </div>
-                  <div class="sort-container">
-                    <i class="fa-solid fa-sort fa-xl icon-overlay"></i>
-                    <label for="sort-books" class="visually-hidden"
-                      >Sort-books</label
-                    >
-                    <select name="sort" id="sort-books">
-                      <option value="" selected disabled>Sort by...</option>
-                      <option value="a-z">A-Z</option>
-                      <option value="z-a">Z-A</option>
-                      <option value="recently-added">Recently Added</option>
-                      <option value="rating">Rating</option>
-                    </select>
-                  </div>
-                  <div class="search-conatiner"></div>
-                </div>
-              </div>
-              <div class="book-grid"></div>
-            </section>
-          </div>
+        <div class="library-actions">
+          <button class="primary-btn">Add Book</button>
+          <button class="primary-btn">Search Book</button>
         </div>
+        <section class="library-container">
+          <div class="library-controls">
+            <nav class="library-tabs">
+              <ul class="library-tabs-list">
+                <li>
+                  <a href="#All-books" class="tabs active">All Books</a>
+                </li>
+                <li><a href="#Reading" class="tabs">Reading</a></li>
+                <li><a href="#Completed" class="tabs">Completed</a></li>
+                <li><a href="#Abandoned" class="tabs">Abandoned</a></li>
+                <li><a href="#To Read" class="tabs">To Read</a></li>
+                <li><a href="#Favorites" class="tabs">Favorites</a></li>
+              </ul>
+            </nav>
+            <div class="library-filters">
+              <div class="filter-container">
+                <i class="fa-solid fa-filter fa-xl icon-overlay"></i>
+                <label for="filter-books" class="visually-hidden"
+                  >Filter-books</label
+                >
+                <select name="filter" id="filter-books">
+                  <option value="" selected disabled>Filter by...</option>
+                  <option value="author">Author</option>
+                  <option value="status">Satus</option>
+                  <option value="rating">Rating</option>
+                  <option value="date-completed">Date Completed</option>
+                </select>
+              </div>
+              <div class="sort-container">
+                <i class="fa-solid fa-sort fa-xl icon-overlay"></i>
+                <label for="sort-books" class="visually-hidden"
+                  >Sort-books</label
+                >
+                <select name="sort" id="sort-books">
+                  <option value="" selected disabled>Sort by...</option>
+                  <option value="a-z">A-Z</option>
+                  <option value="z-a">Z-A</option>
+                  <option value="recently-added">Recently Added</option>
+                  <option value="rating">Rating</option>
+                </select>
+              </div>
+              <div class="search-conatiner"></div>
+            </div>
+          </div>
+          <div class="book-grid"></div>
+        </section>
       </section>
     </main>
 
