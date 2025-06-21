@@ -94,18 +94,18 @@
           <button class="primary-btn">Add Book</button>
           <button class="primary-btn">Search Book</button>
         </div>
-        <section class="library-container">
+        <div class="library-container">
           <div class="library-controls">
             <nav class="library-tabs">
               <ul class="library-tabs-list">
                 <li>
                   <a href="#All-books" class="tabs active">All Books</a>
                 </li>
-                <li><a href="#Reading" class="tabs">Reading</a></li>
-                <li><a href="#Completed" class="tabs">Completed</a></li>
-                <li><a href="#Abandoned" class="tabs">Abandoned</a></li>
-                <li><a href="#To Read" class="tabs">To Read</a></li>
-                <li><a href="#Favorites" class="tabs">Favorites</a></li>
+                <li><a href="#reading" class="tabs">Reading</a></li>
+                <li><a href="#completed" class="tabs">Completed</a></li>
+                <li><a href="#abandoned" class="tabs">Abandoned</a></li>
+                <li><a href="#to-Read" class="tabs">To Read</a></li>
+                <li><a href="#favorites" class="tabs">Favorites</a></li>
               </ul>
             </nav>
             <div class="library-filters">
@@ -131,11 +131,24 @@
               </div>
               <div class="search-container">
                 <i class="fa-solid fa-magnifying-glass fa-lg icon-overlay"></i>
+                <div class="search-bar">
+                  <input
+                    type="search"
+                    name="q"
+                    id="mySearch"
+                    placeholder="Search Library"
+                    maxlength="25"
+                  />
+                  <div class="search-icon-container">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="book-grid"></div>
-        </section>
+        </div>
       </section>
     </main>
 

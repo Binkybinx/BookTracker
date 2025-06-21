@@ -16,6 +16,7 @@
   --light-text: rgb(252, 250, 255);
   --custom-select-options-hover-bg-color: rgba(255, 255, 255, 0.04);
   --custom-select-options-disabled-color: rgba(255, 255, 255, 0.4);
+  --search-bar-bg: rgba(0, 0, 0, 0.1);
   --border-subtle: rgba(255, 255, 255, 0.1);
 
   /* width */
@@ -446,7 +447,7 @@ main {
   text-decoration: none;
   color: var(--light-text);
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   letter-spacing: var(--letter-spacing-sm);
   padding: var(--spacing-xxs);
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
@@ -541,4 +542,62 @@ main {
   pointer-events: none;
   user-select: none;
   font-style: italic;
+}
+
+.search-container .search-bar {
+  position: absolute;
+  right: -100px;
+  top: -70px;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--bg-library);
+  box-shadow: var(--custom-select-options-box-shadow);
+  padding: var(--spacing-xxs);
+  display: none;
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.search-bar.visible {
+  display: flex;
+  opacity: 1;
+  transform: translateY(-0.625em);
+}
+
+.search-bar input[type="search"] {
+  width: 250px;
+  height: 40px;
+  background-color: transparent;
+  color: var(--light-text);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-sm);
+}
+
+.search-bar input[type="search"]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search-bar .search-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.search-icon-container:hover {
+  color: var(--color-accent);
+  transform: scale(1.05);
+  transition: all 0.2s ease;
 }
