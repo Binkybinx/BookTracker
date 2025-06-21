@@ -86,6 +86,7 @@
     0 0 0.25em rgba(0, 127, 186, 0.3);
   --primary-btn-hover-box-shadow: 0 0.1875em 0.625em rgba(0, 0, 0, 0.25),
     0 0 0.375em rgba(0, 127, 186, 0.4);
+    --library-container-box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.3);
 }
 
 *,
@@ -121,7 +122,7 @@ body {
   justify-content: space-around;
   align-items: center;
   color: var(--light-text);
-  padding: var(--spacing-md) 0;
+  padding: var(--spacing-sm) 0;
   flex-wrap: wrap;
 }
 
@@ -129,6 +130,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: var(--spacing-xs) 0;
 }
 
 .navbar .logo p {
@@ -138,13 +140,14 @@ body {
   background-color: var(--bg-about);
   letter-spacing: var(--letter-spacing-sm);
   box-shadow: var(--logo-box-shadow);
+  font-weight: var(--font-weight-medium);
 }
 
 .company-details h1 {
   font-size: var(--font-size-sm);
   margin-left: var(--spacing-xs);
   font-family: var(--heading-font);
-  letter-spacing: var(--letter-spacing-sm);
+  letter-spacing: var(--letter-spacing-md);
   font-style: italic;
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
@@ -165,8 +168,9 @@ body {
   text-decoration: none;
   font-size: var(--font-size-sm);
   color: var(--light-text);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   transition: color 0.25s ease;
+  letter-spacing: var(--letter-spacing-sm);
 }
 
 .navbar .menu a:hover {
@@ -177,7 +181,7 @@ body {
 main {
   width: 100%;
   position: absolute;
-  top: 8.125em;
+  top: 7.15em;
 }
 /* About Section */
 
@@ -195,7 +199,7 @@ main {
 .section-heading {
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-bold);
-  letter-spacing: var(--letter-spacing-sm);
+  letter-spacing: var(--letter-spacing-md);
   text-transform: uppercase;
   margin: var(--spacing-xl) 0 var(--spacing-md) 0;
   animation: scaleFade 0.8s ease-in forwards;
@@ -348,6 +352,7 @@ main {
 .feature-container .feature-card p {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
+  letter-spacing: var(--letter-spacing-sm);
 }
 
 /* Library Section */
@@ -361,6 +366,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 0 var(--spacing-md);
+
 }
 
 .library-section .library-actions {
@@ -392,6 +398,8 @@ main {
 .library-section .library-container {
   background-color: var(--bg-book-section);
   padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--library-container-box-shadow);
 }
 
 .library-container .library-controls {
@@ -454,7 +462,6 @@ main {
   border-bottom: 2px solid var(--color-accent);
   border-radius: var(--border-radius-sm);
   background-color: var(--tabs-hover-bg-color);
-  font-weight: var(--font-weight-bold);
 }
 
 .library-controls .library-filters {
