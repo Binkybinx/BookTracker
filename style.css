@@ -408,6 +408,7 @@ main {
 
 .library-container .library-controls {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: var(--spacing-md) 0;
   position: relative;
@@ -600,4 +601,33 @@ main {
   color: var(--color-accent);
   transform: scale(1.05);
   transition: all 0.2s ease;
+}
+
+.library-container .library-content {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.library-container .tab-content {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: var(--spacing-md) 0;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content .book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1.25em;
+}
+
+.tab-content .book-grid div {
+  border: 1px solid yellow;
 }
