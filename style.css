@@ -181,7 +181,8 @@ body {
   outline: none;
 }
 
-.menu a:hover, .menu a:focus-visible {
+.menu a:hover,
+.menu a:focus-visible {
   cursor: pointer;
   color: var(--color-accent);
 }
@@ -349,10 +350,10 @@ main {
 }
 
 .text-gradient {
+  color: var(--light-text);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--light-text);
 }
 
 .feature-container .feature-card p {
@@ -397,8 +398,8 @@ main {
   outline: none;
 }
 
-
-.library-actions .primary-btn:hover, .primary-btn:focus-visible {
+.library-actions .primary-btn:hover,
+.primary-btn:focus-visible {
   transform: scale(1.02);
   box-shadow: var(--primary-btn-hover-box-shadow);
   background-image: var(--primary-btn-hover-linear-gradient);
@@ -465,7 +466,8 @@ main {
   outline: none;
 }
 
-.tabs:hover,.tabs:focus-visible {
+.tabs:hover,
+.tabs:focus-visible {
   cursor: pointer;
   color: var(--color-accent);
   border-bottom: 2px solid var(--color-accent);

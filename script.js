@@ -128,35 +128,28 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 //library Content
-document.addEventListener('DOMContentLoaded', function() {
-  
-  const tabs = document.querySelectorAll('.library-tabs-list .tabs');
-  
-  tabs.forEach(tab => {
-    tab.addEventListener('click', function(e) {
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".library-tabs-list .tabs");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", function (e) {
       e.preventDefault();
-      
-     
-      document.querySelectorAll('.library-tabs-list .tabs').forEach(t => {
-        t.classList.remove('active');
+
+      document.querySelectorAll(".library-tabs-list .tabs").forEach((t) => {
+        t.classList.remove("active");
       });
-      
-    
-      this.classList.add('active');
-      
-    
-      document.querySelectorAll('.tab-content').forEach(content => {
-        content.classList.remove('active');
+
+      this.classList.add("active");
+
+      document.querySelectorAll(".tab-content").forEach((content) => {
+        content.classList.remove("active");
       });
-      
-    
-      const targetId = this.getAttribute('href');
-      document.querySelector(targetId).classList.add('active');
+
+      const targetId = this.getAttribute("href");
+      document.querySelector(targetId).classList.add("active");
     });
   });
 
-
-  document.querySelector('.library-tabs-list .tabs.active').click();
+  document.querySelector(".library-tabs-list .tabs.active").click();
 });
