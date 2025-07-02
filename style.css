@@ -105,11 +105,11 @@
 html {
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
 body {
   font-family: var(--body-font);
-  position: relative;
 }
 
 /* Navbar */
@@ -133,7 +133,6 @@ body {
 
 .navbar .company-details {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: var(--spacing-xs) 0;
 }
@@ -192,12 +191,12 @@ main {
 
 .about-section {
   width: 100%;
-  background-color: var(--bg-about);
-  color: var(--light-text);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--bg-about);
+  color: var(--light-text);
   padding: 0 var(--spacing-md);
 }
 
@@ -364,12 +363,12 @@ main {
 
 .library-section {
   width: 100%;
-  background-color: var(--bg-library);
-  color: var(--light-text);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--bg-library);
+  color: var(--light-text);
   padding: 0 var(--spacing-md);
 }
 
@@ -404,6 +403,7 @@ main {
   padding: var(--spacing-lg);
   border-radius: var(--border-radius-md);
   box-shadow: var(--library-container-box-shadow);
+  max-width: var(--width-lg);
 }
 
 .library-container .library-controls {
@@ -601,7 +601,8 @@ main {
 .library-container .library-content {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
+  max-height: 100vh;
 }
 
 .library-container .tab-content {
