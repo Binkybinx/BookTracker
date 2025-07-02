@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Track, rate, and organize your reading journey with Book Tracker.">
+
     <link rel="stylesheet" href="style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
@@ -43,7 +45,7 @@
             <div class="feature-icon track-icon">
               <i class="fa-solid fa-book-open fa-2x" aria-hidden="true"></i>
             </div>
-            <h3 class="feature-title track-title">Track</h3>
+            <h3 class="feature-title  track-gradient text-gradient">Track</h3>
             <p>
               Easily manage your book collection and track your reading progress
               along the way.
@@ -56,14 +58,14 @@
                 aria-hidden="true"
               ></i>
             </div>
-            <h3 class="feature-title rate-title">Rate</h3>
+            <h3 class="feature-title  rate-gradient text-gradient">Rate</h3>
             <p>Rate your books and revisit your favorite reads anytime.</p>
           </article>
           <article class="feature-card review-card animate">
             <div class="feature-icon review-icon">
               <i class="fa-solid fa-comment-dots fa-2x" aria-hidden="true"></i>
             </div>
-            <h3 class="feature-title review-title">Review</h3>
+            <h3 class="feature-title  review-gradient text-gradient">Review</h3>
             <p>Capture your thoughts through text, audio, or video reviews.</p>
           </article>
           <article class="feature-card search-card animate">
@@ -73,7 +75,7 @@
                 aria-hidden="true"
               ></i>
             </div>
-            <h3 class="feature-title search-title">Search</h3>
+            <h3 class="feature-title search-gradient text-gradient ">Search</h3>
             <p>
               Quickly search for books and add them to your list with a single
               click.
@@ -110,17 +112,17 @@
             </nav>
             <div class="library-filters">
               <div class="filter-select-container">
-                <i class="fa-solid fa-filter fa-lg icon-overlay"></i>
+                <button class="icon-button"><i class="fa-solid fa-filter fa-lg icon-overlay"></i></button>
                 <ul class="custom-select-options">
                   <li data-value="filter-by" class="disabled">Filter By</li>
                   <li data-value="author">Author</li>
-                  <li data-value="staus">Status</li>
+                  <li data-value="status">Status</li>
                   <li data-value="rating">Rating</li>
                   <li data-value="date-completed">Date Completed</li>
                 </ul>
               </div>
               <div class="sort-select-container">
-                <i class="fa-solid fa-sort fa-lg icon-overlay"></i>
+                <button class="icon-button"><i class="fa-solid fa-sort fa-lg icon-overlay"></i></button>
                 <ul class="custom-select-options">
                   <li data-value="sort-by" class="disabled">Sort By</li>
                   <li data-value="a-z">A-Z</li>
@@ -130,7 +132,7 @@
                 </ul>
               </div>
               <div class="search-container">
-                <i class="fa-solid fa-magnifying-glass fa-lg icon-overlay"></i>
+                <button class="icon-button"><i class="fa-solid fa-magnifying-glass fa-lg icon-overlay"></i></button>
                 <div class="search-bar">
                   <input
                     type="search"
@@ -148,22 +150,22 @@
           </div>
           <div class="library-content">
             <div id="all-books" class="tab-content active">
-              <div class="book-grid">here</div>
+              <div class="book-grid"> <p class="empty-message">No books added yet</p></div>
             </div>
             <div id="reading" class="tab-content">
-              <div class="book-grid">look</div>
+              <div class="book-grid"> <p class="empty-message">No books added yet</p></div>
             </div>
             <div id="completed" class="tab-content">
-              <div class="book-grid">hello</div>
+              <div class="book-grid"> <p class="empty-message">No books added yet</p></div>
             </div>
             <div id="abandoned" class="tab-content">
-              <div class="book-grid">bianca</div>
+              <div class="book-grid"> <p class="empty-message">No books added yet</p></div>
             </div>
             <div id="to-Read" class="tab-content">
-              <div class="book-grid">it</div>
+              <div class="book-grid"> <p class="empty-message">No books added yet</p></div>
             </div>
             <div id="favorites" class="tab-content">
-              <div class="book-grid">works</div>
+              <div class="book-grid"> <p class="empty-message">No books added yet</p></div>
             </div>
           </div>
         </div>

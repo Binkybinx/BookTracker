@@ -131,32 +131,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //library Content
 document.addEventListener('DOMContentLoaded', function() {
-  // Tab switching functionality
+  
   const tabs = document.querySelectorAll('.library-tabs-list .tabs');
   
   tabs.forEach(tab => {
     tab.addEventListener('click', function(e) {
       e.preventDefault();
       
-      // Remove active class from all tabs
+     
       document.querySelectorAll('.library-tabs-list .tabs').forEach(t => {
         t.classList.remove('active');
       });
       
-      // Add active class to clicked tab
+    
       this.classList.add('active');
       
-      // Hide all tab content
+    
       document.querySelectorAll('.tab-content').forEach(content => {
         content.classList.remove('active');
       });
       
-      // Show the corresponding tab content
+    
       const targetId = this.getAttribute('href');
       document.querySelector(targetId).classList.add('active');
     });
   });
 
-  // Initialize - show the first tab content by default
+
   document.querySelector('.library-tabs-list .tabs.active').click();
 });
